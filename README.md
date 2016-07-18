@@ -1,6 +1,21 @@
-## docker-centos7-ansible
+Docker-CentOS7-Ansible
+============
 
-Automated builds for docker container with official CentOS 7 + epel + ansible.   
+[![Build Status](https://travis-ci.org/skandyla/docker-centos7-ansible.svg?branch=master)](https://travis-ci.org/skandyla/docker-centos7-ansible)
 
-The goal is to have minimal CentOS 7 container with only one extra package - ansible.  
-Official ansible container `ansible/centos7-ansible:stable` IMHO contains too many packages.
+
+## Summary
+
+Repository name in Docker Hub: **[skandyla/centos7-ansible](https://hub.docker.com/r/skandyla/centos7-ansible/)**
+
+This repository contains Dockerized [ansible](https://www.ansible.com/), published to the public [Docker Hub Registry](https://registry.hub.docker.com/) via **automated build** mechanism.
+
+
+## Info
+
+This docker image contains the following software stack:
+- Official CentOS7 image
+- Epel repository
+- Ansible
+
+Image can be used for testing ansible playbooks, i.e. run ansible inside the container

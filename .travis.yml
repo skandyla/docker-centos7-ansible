@@ -1,0 +1,12 @@
+sudo: true
+services:
+  - docker
+
+before_install:
+  - docker info
+  - docker version
+  - docker build -t centos7-ansible .
+
+script:
+  - docker run -i centos7-ansible ansible --version
+
